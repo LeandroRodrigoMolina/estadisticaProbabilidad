@@ -1,5 +1,7 @@
 \documentclass[]{article}
-
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage[spanish]{babel}
 %opening
 \title{Resumen sobre estadística y probabilidad.}
 \author{Leandro Molina}
@@ -65,4 +67,70 @@ Con el objeto de inferir algo sobre una poblacion, lo comun es que se tome una m
 La toma de muestras para aprender algo sobre una poblacion es de uso frecuente en administracion, agricultura, politica y acciones de gobierno.
 
 \subsection{Tipos de variables.}
+Dos tipos basicos de variables: 1)Cualitativas y 2)Cuantitativas, la caracteristica que se estudia es de naturaleza no numerica, recibe el nombre de \textbf{variable cualitativa} o \textbf{atributo}. Cuando los datos son de naturaleza cualitativa, importa la cantidad o proporcion que caen dentro de cada categoria. Los datos cualitativos se resumen en tablas o graficas de barras. Cuando la variable que se estudia aparece en forma numerica, se le denomina \textbf{variable cuantitativa}. Las variables cuantitativas pueden ser discretas o continuas. Las \textbf{variables discretas} adoptan solo ciertos valores y existen vacios entre ellos. Las variables discretas son el resultados de una relacion numerica, las observaciones de una \textbf{variable continua} toman cualquier valor dentro de un intervalo especifico. Por lo general las variables continuas son el resultado de mediciones. \linebreak Resumen de los tipos de variables: \\
+\includegraphics[width=14cm, height=8cm]{resumenTiposVariables1_2}
+
+\subsection{Niveles de medición.}
+Los datos se clasifican por niveles de medicion. El nivel de medicion de los datos rige los calculos que se llevan a cabo con el fin de resumir y presentar los datos. Tambien determina las pruebas estadisticas que se deben realizar. De hecho, existen cuatro niveles de medicion: nominal, ordinal, de intervalo y de razon. La medicion mas baja, o mas primaria, corresponde al nivel nominal. La mas alta, o el nivel que proporciona la mayor informacion relacionada con la observacion, es la medicion de razon.
+
+\subsubsection*{Datos de nivel nominal.}
+Las observaciones acerca de una variable cualitativa solo se clasifican y se cuentan. No existe una forma particular para ordenar las etiquetas, no existe un orden natural. Para el nivel nominal, la medicion consiste en contar, a veces, para una mejor compresión de lectura, estos conteos se convierten en porcentajes. Es necesario hacer que el porcentaje sume un total de 100\%, no existe un orden natural para los resultados. Para procesar datos a menudo se codifica la informacion en forma numerica. El nivel nominal tiene las siguientes propiedades:
+\begin{enumerate}
+	\item La variable de interes se divide en categorias o resultados.
+	\item No existe un orden natural de los resultados.
+\end{enumerate}
+
+\subsubsection*{Datos de nivel ordinal.}
+El nivel inmediato superior de datos es el \textbf{nivel ordinal}. No es posible distinguir la magnitud de las diferencias entre los grupos, ¿la diferencia entre superior y bueno es la misma que entre lo malo e inferior? No es posible afirmarlo. Las propiedades del nivel ordinal de los datos son las siguientes:
+\begin{enumerate}
+	\item Las clasificaciones de los datos se encuentran representadas por conjuntos de etiquetas o nombre (alto, medio, bajo), las cuales tienen valores relativos.
+	\item En consecuencia, los valores relativos de los datos se pueden clasificar u ordenar.
+\end{enumerate}
+
+\subsubsection*{Datos de nivel de intervalo.}
+El \textbf{el nivel de intervalo} de medicion es el nivel inmediato superior. Incluye todas las caracteristicas de nivel ordinar, pero, ademas, la diferencia entre valores constituye una magnitud constante. Si las distancias entre los numeros tienen sentido, aunque las razones no, entonces tiene una escala de intervalo de medicion. Las propiedades de los datos de nivel intervalo son las siguientes:
+\begin{enumerate}
+	\item Las clasificaciones de datos se ordenan de acuerdo con el grado que posea de las caracteristica en cuestion.
+	\item Diferencias iguales en la caracteristica representan diferencias iguales en las mediciones.
+\end{enumerate}
+
+\subsubsection*{Datos de nivel de razón.}
+Todos los datos cuantitativos son registrados en el nivel de razon de la medicion, el \textbf{nivel de razon} es el \textit{mas alto}. Posee todas las caracteristicas del nivel de intervalo, aunque, ademas, el punto 0 tiene sentido y la razon entre dos numeros significativa, si se encuentra en 0 significa la ausencia de algo (peso, dinero, etc). Las propiedades de los datos de nivel intervalo son las siguientes:
+\begin{enumerate}
+	\item Las clasificaciones de datos se ordenan de acuerdo con la cantidad de caracteristicas que poseen.
+	\item Diferencias iguales en la caracteristica representan diferencias iguales en los numeros asignados a las clasificaciones.
+	\item El punto cero representa la ausencia de caracteristicas y la razon entre dos numeros es significativa.
+\end{enumerate}
+La siguiente grafica resume las principales caracteristicas de los diversos niveles de medicion.
+\\
+\includegraphics[width=16cm, height=8cm]{resumenCaracteristicasNivelesMedicion1_3}
+\section{Descripción de datos.}
+{\large Tabla de frecuencias, distribuciones de frecuencias y su representación grafica.}
+\subsection{Construcción de una tabla de frecuencias.}
+La estadistica descriptiva se encarga de organizar datos con el fin de mostrar la distribucion general de estos y el lugar en donde tienden concentrarse, ademas de señalar valores de datos pocos usuales o extremos. El primer procedimiento que se emplea para organizar y resumir un conjunto de datos es una \textbf{tabla de frecuencias.}
+\begin{center}
+	\textbf{Tabla de frecuencias:} Agrupacion de datos cualitativos en clases mutuamente excluyentes que muestra el numero de observaciones en cada clase.
+\end{center}
+Recordar que, una variable cualitativa es de naturaleza no numerica; es decir, que la informacion es clasificable en distintas categorias. No hay un order particular en estas categorias. Por otro lado, estan las variables cuantitativas son de indole numerica.
+\subsubsection*{Frecuencias relativas de clase.}
+Es posible convertir las frecuencias de clase en frecuencias relativas de clase para mostrar la fraccion del numero total de observaciones en cada una de ellas. Una frecuencia relativa capta la relacion entre la totalidad de elementos de una clase y el numero total de observaciones. Para convertir una distribucion de frecuencias en una distribucion de frecuencias relativa, cada una de las frecuencias de clase se divide entre el total de observaciones.
+
+\subsubsection*{Representación grafica de datos cualitativos.}
+El instrumento mas comun para representar una variable cualitativa en forma grafica es la \textbf{grafica de barras}. En la mayoria de los casos, el eje horizontal muestra la variable de interes y el eje vertical la frecuencia o fraccion de cada uno de los posibles resultados. Una caracteristica distinta de esta herramienta es que existe una distancia o espacio entre las barras. Una grafica de barras es una representacion grafica de una tabla de frecuencias mediante una serie de rectangulos de anchura uniforme, cuya altura corresponde a la frecuencia de clase.
+\begin{center}
+	\textbf{Grafica de barras:} En ella, las clases se representan en el eje horizontal y la frecuencia de clase en el eje vertical. Las frecuencias de clase son proporcionales a las alturas de las barras.
+\end{center}
+Se muestra ejemplo de una grafica de barras en la siguiente pagina:\\
+\includegraphics[width=13cm]{graficaBarras2_1.png} \\
+Otro tipo de grafica util para describir informacion cualitativa es la \textbf{grafica de pastel}.
+\begin{center}
+	\textbf{Grafica de pastel: }Grafica que muestra la parte o porcentaje que representa cada clase del total de numeros de frecuencia.
+\end{center}
+El primer paso para elaborar una grafica de pastel consiste en registrar los porcentajes 0, 5, 10, 15, etc, de manera uniforme alrededor de la circunferencia de un circulo. El area rebanada representa alguna clase, cada rebanada de pastel representa la  porcion relativa de cada componente, es posible compararlas con facilidad.\\
+Aca un ejemplo de grafica bizcochuelo.\\
+\includegraphics{tablaFrecuenciasRelativas2_2.PNG}\\
+\includegraphics[width=12cm, height=10cm]{graficoPastel2_2.png} \\
+Las graficas de pastel y las de barras cumplen casi la misma funcion. ¿Cuales son los criterios para elegir una u otra? En la mayoria de los casos, las graficas de pastel son las mas informativas cuando se trata de comparar la diferencia relativa en el porcentaje de observaciones de cada uno de las variables de la escala nominal. Es preferible usar una grafica de barras cuando el objetivo es comparar el numero de observaciones en cada categoria.
+\subsection{Construcción de distribuciones de frecuencias: datos cuantitativos.}
+
 \end{document}
