@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.20)  22 DEC 2022 19:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.20)  10 JAN 2023 18:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -175,67 +175,73 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {C:/Users/DireC/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-[2]
-<resumenTiposVariables1_2.png, id=14, 579.66562pt x 386.94562pt>
+(ResumenEstadistica_FCAD_2022.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+)
+\tf@toc=\write3
+\openout3 = `ResumenEstadistica_FCAD_2022.toc'.
+
+ [2] [3]
+<resumenTiposVariables1_2.png, id=17, 579.66562pt x 386.94562pt>
 File: resumenTiposVariables1_2.png Graphic file (type png)
 <use resumenTiposVariables1_2.png>
-Package pdftex.def Info: resumenTiposVariables1_2.png  used on input line 71.
+Package pdftex.def Info: resumenTiposVariables1_2.png  used on input line 74.
 (pdftex.def)             Requested size: 398.34222pt x 227.62283pt.
 
-Overfull \hbox (53.34222pt too wide) in paragraph at lines 70--72
+Overfull \hbox (53.34222pt too wide) in paragraph at lines 73--75
 [] 
  []
 
-[3]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 77.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 77.
- [4 <./resumenTiposVariables1_2.png>] [5]
-<resumenCaracteristicasNivelesMedicion1_3.png, id=27, 615.0478pt x 301.125pt>
+[4] [5 <./resumenTiposVariables1_2.png>] [6]
+<resumenCaracteristicasNivelesMedicion1_3.png, id=30, 615.0478pt x 301.125pt>
 File: resumenCaracteristicasNivelesMedicion1_3.png Graphic file (type png)
 <use resumenCaracteristicasNivelesMedicion1_3.png>
 Package pdftex.def Info: resumenCaracteristicasNivelesMedicion1_3.png  used on 
-input line 106.
+input line 109.
 (pdftex.def)             Requested size: 455.25026pt x 227.63055pt.
 
-Overfull \hbox (110.25026pt too wide) in paragraph at lines 104--107
+Overfull \hbox (110.25026pt too wide) in paragraph at lines 107--110
 [] 
  []
 
-[6 <./resumenCaracteristicasNivelesMedicion1_3.png>]
-<graficaBarras2_1.png, id=32, 452.4403pt x 249.93375pt>
+[7 <./resumenCaracteristicasNivelesMedicion1_3.png>]
+<graficaBarras2_1.png, id=36, 452.4403pt x 249.93375pt>
 File: graficaBarras2_1.png Graphic file (type png)
 <use graficaBarras2_1.png>
-Package pdftex.def Info: graficaBarras2_1.png  used on input line 124.
+Package pdftex.def Info: graficaBarras2_1.png  used on input line 127.
 (pdftex.def)             Requested size: 369.88582pt x 204.32918pt.
 
-Overfull \hbox (24.88582pt too wide) in paragraph at lines 123--126
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 126--129
 [] 
  []
 
-[7 <./graficaBarras2_1.png>]
-<tablaFrecuenciasRelativas2_2.PNG, id=37, 279.29344pt x 129.48375pt>
+[8 <./graficaBarras2_1.png>]
+<tablaFrecuenciasRelativas2_2.PNG, id=40, 279.29344pt x 129.48375pt>
 File: tablaFrecuenciasRelativas2_2.PNG Graphic file (type png)
 <use tablaFrecuenciasRelativas2_2.PNG>
 Package pdftex.def Info: tablaFrecuenciasRelativas2_2.PNG  used on input line 1
-31.
+34.
 (pdftex.def)             Requested size: 279.29276pt x 129.48341pt.
-<graficoPastel2_2.png, id=38, 271.76532pt x 258.9675pt>
+<graficoPastel2_2.png, id=41, 271.76532pt x 258.9675pt>
 File: graficoPastel2_2.png Graphic file (type png)
 <use graficoPastel2_2.png>
-Package pdftex.def Info: graficoPastel2_2.png  used on input line 132.
+Package pdftex.def Info: graficoPastel2_2.png  used on input line 135.
 (pdftex.def)             Requested size: 341.44746pt x 284.55688pt.
- [8 <./tablaFrecuenciasRelativas2_2.PNG> <./graficoPastel2_2.png>] [9] (Resumen
-Estadistica_FCAD_2022.aux
+ [9 <./tablaFrecuenciasRelativas2_2.PNG> <./graficoPastel2_2.png>] [10] (Resume
+nEstadistica_FCAD_2022.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 3343 strings out of 475281
- 59218 string characters out of 2774064
- 417228 words of memory out of 3000000
- 24803 multiletter control sequences out of 15000+600000
+ 3350 strings out of 475281
+ 59436 string characters out of 2774064
+ 417230 words of memory out of 3000000
+ 24807 multiletter control sequences out of 15000+600000
  474467 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,6n,67p,1005b,365s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -247,9 +253,9 @@ s/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/DireC/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/DireC/AppData/Local/Prog
 rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/DireC/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on ResumenEstadistica_FCAD_2022.pdf (9 pages, 234568 bytes).
+Output written on ResumenEstadistica_FCAD_2022.pdf (10 pages, 236781 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
+ 80 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
