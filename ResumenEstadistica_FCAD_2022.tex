@@ -1,5 +1,6 @@
 \documentclass[]{article}
 \usepackage{graphicx}
+\usepackage{hyperref}
 \graphicspath{ {./images/} }
 \usepackage[spanish]{babel}
 %opening
@@ -13,12 +14,13 @@
 
 \noindent
 \includegraphics[width=\linewidth, height=14cm]{twin_estadistica.png}
+\footnote{Personaje perteneciente a \href{https://www.youtube.com/@TwinSensei}{Twin-Sensei}}
 \pagebreak
 
 \tableofcontents
 
 \pagebreak
-\section{Capitulo 1.}
+\section{Capitulo 1. ¿Que es la estadistica?}
 \subsection{¿Por qué se debe estudiar estadística?}
 Hay 3 motivos para el estudio de la estadística estos son:
 \begin{enumerate}
@@ -107,7 +109,7 @@ Todos los datos cuantitativos son registrados en el nivel de razon de la medicio
 La siguiente grafica resume las principales caracteristicas de los diversos niveles de medicion.
 \\
 \includegraphics[width=16cm, height=8cm]{resumenCaracteristicasNivelesMedicion1_3}
-\section{Capitulo 2.}
+\section{Capitulo 2. Descripcion de datos: tablas de frecuencias, distribuciones de frecuencias y su representacion grafica.}
 \subsection{Descripción de datos.}
 {\large Tabla de frecuencias, distribuciones de frecuencias y su representación grafica.}
 \subsection{Construcción de una tabla de frecuencias.}
@@ -176,5 +178,17 @@ Un histograma de una distribucion de frecuencias basadas en datos cuantittivos s
 Mostraremos un ejemplo a continuacion.
 \subsubsection*{Poligono de frecuencias}
 Un poligono de frecuencias tambien muestra la forma que tiene una distribucion y es similar a un histograma. Consiste en segmentos de recta que conectan los puntos que forman las intersecciones de los puntos medios de clase y frecuencias de clase. El punto medio de cada clase se indica en una escala en el eje X y las frecuencias de clase en el Y. Recorda que el punto medio de clase es el valor localizado en el centro de una clase y representa los valores tipicos de ella (limite superior - limite inferior). La frecuencia de clase es el numero de observaciones que hay en una clase particular. Para construir un poligono de frecuencias, hay que desplazarse horizontalmente sobre la grafica al punto medio, y en seguida de manera vertical, la frecuencia de clase, donde se coloca un punto. Los valores X y de Y de este punto reciben el nombre de \textit{coordenadas}. El proceso cotinua con todas las clases. Posteriormente, los puntos se conectan de manera ordenada. Es decir, que el punto que representa la clase mas baja se une al que representa la segunda clase y asi en lo sucesivo. \textbf{PONER GRAFICA 2-5}\linebreak Tanto el histograma como el poligono de frecuencias permiten tener una vista rapida de las principales caracteristicas de los datos (maximos, minimos, puntos de concentracion, etc.). Aunque las dos representaciones tienen un proposito similar, el histograma posee la ventaja de que describe cada clase como un rectangulo, en el que la barra de altura de este representa el numero de elementos que hay en cada clase. El poligono de frecuencias, en cambio, tiene una ventaja con respecto al histograma. Tambien permite comparar directamente dos o mas distribuciones de frecuencias \textbf{PONER GRAFICA 2-6 DE EJEMPLO}.
-\subsubsection*{Distribuciones de frecuencia acumulativas}
+\subsubsection*{Distribuciones de frecuencia acumulativas}.
+Una distribucion de frecuencias acumulativas muestra el numero o porcentaje de observaciones por debajo de valores dados, con representacion grafica de un \textbf{poligono de frecuencias acumulativas.} Como su nombre lo indica, una distribucion de frecuencias acumulativas y un poligono de frecuencias acumulativas implican \textit{frecuencias acumulativas}. La frecuencia acumulativa basicamente vas sumando todas las frecuencias de las clases. \textbf{PONER TABLA 2-9}
+Para trazar una distribucion de frecuencias acumulativas, \textbf{se ubica el limite superior de cada clase en una escala a lo largo del eje X}, y \textbf{las correspondientes frecuencias acumulativas, a lo largo del eje Y}. Para incluir informacion adicional, gradue el eje vertical a la izquierda en unidades y el eje vertical a la derecha en porcentajes.
+\section{Capitulo 3. Descripcion de datos: medidas numericas.}
+\subsection{Introduccion}
+En este capitulo se presentan dos formas numericas de describir datos cuantitativos: las \textbf{medidas de ubicacion} y las \textbf{medidas de dispersion.} A las medidas de ubicacion a menudo se les llama promedios. El proposito de una medida de ubicacion consiste en señalar el centro de un conjunto devalores. Vos ya estas conoces el concepto de promedio (media aritmetica), medida de ubicacion que muestra el valor central de los datos. Si solo tomas las medidas de ubicacion en cuenta de un conjunto de datos o si compara varios conjuntos de datos utilizando valores centrales, llegara a una conclusion incorrecta. Ademas de las medidas de ubicacion, debe tomar en consideracion la \textbf{dispersion} (con frecuencia se le llama \textit{frecuencia variacion }o \textit{propagacion}) de los datos. Para describir la dispersion considere el rango, la desviacion media, la varianza y la desviacion estandar. En principio se explican las medidas de ubicacion. No existe una unica medida de dispersion; de hecho existen varias. Consideraremos cinco:
+\begin{enumerate}
+	\item La media aritmetica.
+	\item La media ponderada.
+	\item La mediana.
+	\item La moda.
+	\item La media geometrica.
+\end{enumerate}
 \end{document}
