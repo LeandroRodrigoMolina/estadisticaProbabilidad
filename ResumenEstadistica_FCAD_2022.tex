@@ -275,5 +275,67 @@ La moda es otra medida de ubicación (promedio).
 La moda es de especial utilidad para resumir datos de nivel nominal. Es posible determinar la moda para todos los niveles de datos: nominal, ordinal, de intervalo y de razón. La moda también tiene la ventaja de que no influyen en ella valores extremadamente grandes o pequeños. No obstante, la moda tiene sus desventajas, por las cuales se le utiliza con menor frecuencias que a la media o mediana. En el caso de muchos conjuntos de datos no existe la moda porque ningún valor se presenta mas de una vez. Puede ocurrir que un agrupamiento de datos tenga dos modas se denomina bi-modal (tiene dos modas).
 
 \subsection{Posiciones relativas de la media, la mediana y la moda.}
+Se trata de una distribución simétrica que también tiene forma de campana. Esta distribución \textit{posee} la misma forma a cualquier lado del centro. Si el polígono estuviera doblado a la mitad, las dos mitades serian idénticas. En cualquier distribución simétrica, la moda, la mediana, y la media siempre son iguales. Hay distribuciones simétricas que no tienen forma de campana (En una distribución en forma de campana la media, la mediana y la moda son iguales). Si una distribución no es simétrica, o \textbf{sesgada}, (Una distribución sesgada no es simétrica.) la relación entre las tres medidas cambia. En una distribución con sesgo positivo la media aritmética es la mayor de las tres medidas. ¿Por que? Porque en ella influyen, mas que sobre la mediana o la moda, unos cuantos valores extremadamente altos. Por lo general, la mediana es la siguiente medida mas grande en una distribución de frecuencias con sesgo positivo. La moda es la menor de las tres medidas. Si la distribución tiene un sesgo muy pronunciado, la media no seria una mediana adecuada. La mediana y la moda serian mas representativas. \\
+Por el contrario, si una distribución tiene un \textbf{sesgo negativo}, la media es la menor medida de las tres. Por supuesto, la media es sensible a la influencia de una cantidad extremadamente pequeña de observaciones. La mediana es mayor que la media aritmética y la moda es la mas grande de las tres medidas. De nuevo, si la distribución tiene un sesgo muy pronunciado, la media no se utilizaría para representar a los datos.
+
+\subsection{¿Por que estudiar la dispersión?}
+Una medida de ubicación, como la media o la mediana, solo describe el centro de los datos. Desde este punto de vista resulta valiosa, pero no dice nada sobre la dispersión de los datos. Una medida de dispersión pequeña indica que los datos se acumulan con proximidad alrededor de la media aritmética. Por consiguiente, la media se considera representativa de los datos. Por el contrario, una medida grande de dispersión indica que la media no es confiable. Otra razón para estudiar la dispersión en un conjunto de datos consiste en comparar la propagación en dos o mas distribuciones. Una medida de dispersión sirve para evaluar la confiabilidad de dos o mas medidas de ubicación.
+
+\subsection{Medidas de dispersión}
+Consideraremos diversas medidas de dispersión. El rango se sustenta en los valores máximo y mínimo del conjunto de datos, es decir, solo se consideran dos valores. La desviación media, la varianza y la desviación estándar se basan en desviaciones de la media aritmética.
+
+\subsection*{Rango}
+La medida mas simple de dispersión es el \textbf{rango}. Representa la diferencia entre los valores máximo y mínimo de un conjunto de datos. En forma de ecuación:
+\begin{quote}
+	\item Rango = Valor máximo - valor mínimo
+\end{quote}
+El rango se emplea mucho en aplicaciones de control de procesos estadísticos (CPE), debido a que resulta fácil de calcular y entender.
+
+\subsection*{Desviación media}
+Un problema que presenta el rango escriba en que parte de dos valores, el mas alto y el mas bajo, es decir, no los toma en cuenta a todos. La desviación media si lo hace; mide la cantidad media respecto de la cual los valores de una población o muestran varían. Expresado en forma de definición:
+\begin{quotation}
+	\item \textbf{Desviación media}: Media aritmética de los valores absolutos de las desviaciones con respecto a la media aritmética.
+\end{quotation}
+En el caso de una muestra, la desviación media, designada DM, se calcula mediante la formula:
+\[  DM = \frac{\sum |X - \overline{X}\ |}{n}\]
+en donde:
+\begin{itemize}
+	\item $X$ es el valor de cada observación.
+	\item $\overline{X}$ es la media aritmética de los valores.
+	\item $n$ es el numero de observaciones en la muestra.
+	\item $||$ indica el valor absoluto.
+\end{itemize}
+¿Por que ignorar los signos de las desviaciones de la media? De no hacerlo, las desviaciones positivas y negativas se compensarían con exactitud unas a otras y la desviación media siempre seria cero. Dicha medida (cero) resultaría un estadístico sin utilidad.\\
+La desviación media posee dos ventajas, primero, incluye todos los valores de los cálculos. Recuerde que el rango solo incluye los valores máximo y mínimo. Segundo, es fácil de definir: es la cantidad promedio que los valores se desvían de la media. Sin embargo, su inconveniente es el empleo de valores absolutos. Por lo general, es difícil trabajar con valores absolutos, así que la desviación media no se emplea con tanta frecuencia como otras medidas de dispersión, como la desviación estándar.
+
+\subsection*{Varianza y desviación estándar}
+La \textbf{varianza} y la \textbf{desviación estándar} también se fundamentan en las desviaciones de la media. Sin embargo, en lugar de trabajar con el valor absoluto de las desviaciones, la varianza y la desviación estándar lo hacen con el cuadrado de las desviaciones.
+\begin{quote}
+	\item \textbf{Varianza}: Media aritmética de las desviaciones de la media elevadas al cuadrado.
+\end{quote}
+La varianza es no negativa y es cero solo si todas las observaciones son las mismas.
+
+\begin{quote}
+	\item \textbf{Desviación estándar}: Raíz cuadrada de la varianza.
+\end{quote}
+
+\subsection{Interpretación y usos de la desviación estándar}
+La desviación estándar normalmente se utiliza como medida para comparar la dispersión de dos o mas conjuntos de observaciones.
+
+\subsection*{Teorema de Chebyshev}
+Ya se ha insistido en el hecho de que una desviación estándar pequeña de un conjunto de valores indica que estos se localizan cerca de la media. Por el contrario, una desviación grande revela que las observaciones se encuentran muy dispersas con respecto a la media. El pibe Chebyshev estableció un teorema que nos permite determinar la mínima porción de valores que se encuentran a cierta cantidad de desviaciones estándares de la media.  El teorema del Cheby establece lo siguiente:
+\begin{quote}
+	\item \textbf{Teorema de Chebyshev}: En cualquier conjunto de observaciones  (muestra o población), la proporción de valores que se encuentran a $k$ desviaciones estándares de la media es de por lo menos $1 - 1/k^{2}$, siendo $k$ cualquier constante mayor que 1.
+\end{quote}
+
+\subsection*{La regla empírica}
+El teorema Cheby se relaciona con cualquier conjunto de valores; es decir, que la distribución de valores puede tener cierta forma. Sin embargo, en cualquier distribución simétrica con forma de campana, es posible ser mas precisos en la explicación de la dispersión en torno a la media. Estas relaciones que implican la desviación estándar y la media se encuentran descritas en la \textbf{regla empírica}, a veces denominada \textbf{regla normal}. La regla empírica solo se aplica a distribuciones simétricas con forma de campana.
+
+\begin{quote}
+	\textbf{Regla empírica}: En cualquier distribución de frecuencias simétrica con forma de campana, aproximadamente 68\% de las observaciones se encontraran entre mas y menos una desviación estándar de la media; cerca de 95\% de las observaciones se encontraran entre mas y menos dos desviaciones estándares de la media y, de hecho (99.7\%), estarán mas y metros tres desviaciones de la media.
+\end{quote}
+Se ha observado que si una distribución es simétrica y tiene forma de campana, todas las observaciones se encuentran entre la media y menos tres desviaciones estándares.
+
+\subsection{Media y desviación estándar de datos agrupados}
 
 \end{document}
