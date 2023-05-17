@@ -290,7 +290,8 @@ La medida mas simple de dispersión es el \textbf{rango}. Representa la diferenc
 	\item Rango = Valor máximo - valor mínimo
 \end{quote}
 El rango se emplea mucho en aplicaciones de control de procesos estadísticos (CPE), debido a que resulta fácil de calcular y entender.
-
+\subsection{Rango intercuartílico o rango intercuartil}
+El rango intercuartílico o rango intercuartil (RIC o IQR), se obtiene como la diferencia entre los cuartiles superior e inferior: RIC = \textbf{$Q_{3} - Q_{1}$} mide el rango del 50\% central de la distribución. Gráficamente, está asociado a la “caja” del diagrama de caja.
 \subsection*{Desviación media}
 Un problema que presenta el rango escriba en que parte de dos valores, el mas alto y el mas bajo, es decir, no los toma en cuenta a todos. La desviación media si lo hace; mide la cantidad media respecto de la cual los valores de una población o muestran varían. Expresado en forma de definición:
 \begin{quotation}
@@ -314,14 +315,27 @@ La \textbf{varianza} y la \textbf{desviación estándar} también se fundamentan
 	\item \textbf{Varianza}: Media aritmética de las desviaciones de la media elevadas al cuadrado.
 \end{quote}
 La varianza es no negativa y es cero solo si todas las observaciones son las mismas.
-
+El principal problema de la varianza es que se mide el términos del cuadrado de las unidades originales de medición. Por ejemplo:\\ Si las mediciones están dadas en metros, entonces la varianza queda expresada en metros cuadrados. Tomando la raíz cuadrada de la varianza, obtenemos la desviación estándar, que regresa la medida de variabilidad a la unidades de medición originales
 \begin{quote}
 	\item \textbf{Desviación estándar}: Raíz cuadrada de la varianza.
 \end{quote}
-
+La \textbf{desviación estándar} de un conjunto de mediciones es igual a la raíz cuadrada de la varianza.\\
+Desviación estándar poblacional: $\delta = \sqrt{\delta^{2}}$\\
+Desviación estándar muestral: $s = \sqrt{s^{2}}$
 \subsection{Interpretación y usos de la desviación estándar}
 La desviación estándar normalmente se utiliza como medida para comparar la dispersión de dos o mas conjuntos de observaciones.
 
+\subsection{Coeficiente de variación}
+El coeficiente de variación (CV) nos informa acerca de la dispersión \underline{relativa} de un conjunto de datos o mediciones.\\
+Caso mediciones muéstrales: $CV = \frac{S}{|\overline{x}|}$\\
+Caso mediciones poblacionales: $CV = \frac{\delta}{|\overline{\mu}|}$ \\
+Principales características del CV:
+\begin{enumerate}
+	\item El coeficiente de variación no posee unidades, es decir es adimensional.
+	\item Para su interpretación se puede expresar como porcentaje, teniendo en cuenta que puede superar el 100\%.
+	\item Se utiliza para comparar conjuntos de datos pertenecientes a poblaciones distintas.
+	\item Cuanto más grande es el coeficiente de variación más dispersos están los datos respecto de la media, por lo que la media va perdiendo representatividad.
+\end{enumerate}
 \subsection*{Teorema de Chebyshev}
 Ya se ha insistido en el hecho de que una desviación estándar pequeña de un conjunto de valores indica que estos se localizan cerca de la media. Por el contrario, una desviación grande revela que las observaciones se encuentran muy dispersas con respecto a la media. El pibe Chebyshev estableció un teorema que nos permite determinar la mínima porción de valores que se encuentran a cierta cantidad de desviaciones estándares de la media.  El teorema del Cheby establece lo siguiente:
 \begin{quote}
@@ -369,4 +383,34 @@ donde:
 Esta aprendiendo a organizar, resumir e interpretar datos mediante la estadística, también es importante que comprenda esta disciplina con el fin de que se convierta en un consumir inteligente de información. En este capitulo aprendió la forma de calcular estadísticas descriptivas de naturaleza numérica. En particular, la manera de calcular e interpretar medidas de ubicación de un conjunto de datos: la media, la mediana y la moda. También ha estudiado las ventajas y desventajas de cada estadístico. Conocer las ventajas y desventajas de la media, la mediana y la moda es importante al dar un informe estadístico y cuando se emplea información estadística para tomar decisiones. También aprendió a calcular medidas de dispersión: el rango, la desviación media y la desviación estándar. Cada uno de estos estadísticos tiene ventajas y desventajas. Recuerde que el rango proporciona información sobre la dispersión total de una distribución. Sin embargo, no aporta información sobre la forma en que se acumulan los datos o se concentran entorno al centro de la distribución. Conforme aprenda más estadística, necesitara recordar que  cuando emplea esta disciplina debe mantener un punto de vista independiente y basado en principios. Cualquier informe estadístico requiere la comunicación honesta y objetiva de los resultados.
 
 \section{Descripción de datos}
+En este capítulo continua el estudio de la estadística descriptiva. Estos diagramas y la estadística proporcionan una idea adicional del lugar en el que los valores se concentran, así como de la forma general de los datos. En seguida se consideran datos bivariados de cada una de las observaciones individuales o seleccionadas.
+\begin{quote}
+	\textbf{Parámetros}: medidas descriptivas numéricas calculadas a partir de \textbf{mediciones poblacionales.} Por ejemplo, la media aritmética o promedio de una población, es decir, la media poblacional.
+	\item \textbf{Estadísticos (o estadísticas)}: medidas descriptivas numéricas calculadas a partir de \textbf{mediciones muéstrales.} Por ejemplo, la media aritmética o promedio de una muestra, es decir, la media muestral
+\end{quote}
+Los parámetros se designan con \textbf{letras griegas} y los estadísticos con \textbf{letras latinas}, a veces con algún añadido como el caso de la media (con una barra arriba de la letra).
+\subsection{Sesgo}
+Hay cuatro formas: simétrica, con sesgo positivo, con sesgo negativo y bimodal. En un conjunto \textbf{simétrico} de observaciones la media y mediana son iguales, y los valores de datos se dispersan uniformemente en torno a estos valores. Un conjunto de valores se encuentra \textbf{sesgado a la derecha} o \textbf{positivamente sesgado} o \textbf{sesgado a la izquierda} si existe un solo pico y los valores a se extienden mucho mas allá a la derecha del pico que a la izquierda de este. En este caso \textbf{la media es mas grande que la mediana}. En una distribución \textbf{negativamente sesgada} existe un solo pico, pero las observaciones se extienden mas a la izquierda, en dirección negativa. En una distribución negativamente sesgada, \textbf{la media es menor que la mediana}. Una \textbf{distribución bimodal} tendrá dos o mas picos. Con frecuencia este es el caso cuando los valores provienen de dos o mas poblaciones
+\subsection{Percentiles, deciles y cuartiles}
+La desviación estándar es la medida de dispersión que mas se utiliza. No obstante, existen otras formas de describir la variación o dispersión de un conjunto de datos. Un método consiste en determinar la ubicación de los valores que dividen un conjunto de observaciones en partes iguales. Estas medidas incluyen los \textbf{cuartiles, deciles y percentiles}.\\
+Los \textbf{cuartiles} dividen a un conjunto de observaciones en cuatro partes iguales, ordenadas de menor a mayor. Para explicarlo mejor, piense en un conjunto de valores ordenados de menor a mayor. Anteriormente se denomino a la \textit{mediana} al valor intermedio de un conjunto de datos ordenados de menor a mayor. Es decir el 50\% de las observaciones son mayores que la mediana y 50\% son menores que la mediana. La mediana constituye una medida de ubicación, ya que señala el centro de los datos. De igual manera, los \textbf{cuartiles} dividen a un conjunto de observaciones en cuatro partes iguales. El primer cuartil, que se representa con $Q_{1}$, es el valor debajo del cual se presenta el 25\% de las observaciones, y el tercer cuartil, que simboliza $Q_{3}$, es el valor debajo del cual se presenta 75\% de las observaciones. Lógicamente, $Q_{2}$ es la mediana. $Q_{1}$ puede considerarse  como la mediana de la mitad inferior y $Q_{3}$ como la mediana de la parte superior de los datos. \\
+Asimismo, los \textbf{deciles} dividen un conjunto de observaciones en 10 partes iguales y los \textbf{percentiles} en 100 partes iguales.\\Un ejemplo de deciles es, si su promedio general en la universidad se encuentra en el octavo decil, usted podría concluir que 80\% de los estudiantes tuvieron un promedio general inferior al suyo y 20\%, un promedio superior. \\ Un ejemplo de percentiles es, un promedio general ubicado en el trigésimo tercer percentil significa que el 33\% de los estudiantes tienen un promedio general mas bajo y que el 67\% un promedio mas alto.
+\subsection{Diagramas de caja}
+Un \textbf{diagrama de caja} o \textbf{box-plot} es una representación grafica, basada en cuartiles, que ayuda a presentar un conjunto de datos. Para construir un diagrama de caja, solo necesita cinco estadísticos:
+\begin{enumerate}
+	\item El valor mínimo.
+	\item Primer cuartil.
+	\item La mediana (segundo cuartil).
+	\item Tercer cuartil.
+	\item El valor máximo.
+\end{enumerate}
+\subsection*{Construcción de un diagrama de caja}
+Cualquier medición a mayor distancia del límite superior o mayor distancia del límite inferior es un resultado o valor atípico; el resto de las mediciones, dentro de los límites, no son inusuales. Los resultados atípicos se suelen marcar con un asterisco o punto. El diagrama de caja marca el rango del conjunto de datos usando “bigotes” para conectar las mediciones más pequeñas y más grandes (excluyendo resultados atípicos) a la caja.
+\begin{quote}
+	\textbf{Límite inferior}: $Q_{1} - 1,5.(Q_{3} - Q_{1})$
+	\item \textbf{Límite superior}: $Q_{3} + 1,5.(Q_{3} - Q_{1})$
+\end{quote}
+\textbf{Importante: }Los límites son imaginarios, no se suelen trazar
+A la diferencia \textbf{$Q_{3} - Q_{1}$} se le llama \textbf{rango intercuartílico} o \textbf{rango intercuartil}.
+Un diagrama de caja puede representarse de manera horizontal o vertical. Suele ser más sencillo de interpretar de manera horizontal.
 \end{document}
