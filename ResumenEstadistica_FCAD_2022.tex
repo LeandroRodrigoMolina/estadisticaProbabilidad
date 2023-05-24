@@ -469,4 +469,9 @@ Esta fórmula se transforma, en la del teorema de la probabilidad total, si apli
 Supongamos ahora que queremos saber la probabilidad de que la prueba de positiva siendo que estas infectado con la bacteria. En ese caso ese valor sería obtenido a través de la siguiente fórmula:
 \[ P(S_i|A)= \frac{P(S_i)P(A|S_i)}{\sum_{j=1}^k P(S_j)P(A|S_j)} \]
 Como podemos ver, esta fórmula es la misma que para la probabilidad condicionada, con la diferencia que se realiza una serie de cambios leves, resultado de aplicar las propiedades antes mencionadas.
+Este teorema resulta muy útil para muchos campos de la ciencia. Pero tiene una serie de puntos débiles que lo convierten en una no muy buena opción para algunas situaciones en particular.
+\begin{enumerate}
+	\item Si no se tiene un conocimiento del fenómeno, no es posible asignar las probabilidades iniciales (a priori) y por lo tanto no es posible aplicar el teorema de Bayes. Este problema se suele evitar, suponiendo que las probabilidades a priori tienen una distribución uniforme, lo cual es considerado por algunos autores como inaceptable, porque en muchas situaciones no conocemos la distribución inicial, pero sabemos claramente que no es uniforme. Otra posibilidad sería asignar subjetivamente las probabilidades iniciales, es decir asignar probabilidad sin contar con evidencias que la respaldan, pero esto llevaría a que dos investigadores con los mismos datos obtuviesen unas probabilidades finales diferentes.
+	\item El método de Bayes no permite calcular ni revisar "\textit{probabilidades a priori objetivas}" de la hipótesis sino las "\textit{probabilidades a priori subjetivas}" de dicha hipótesis, la cual es establecida por cada investigador. Es decir su grado personal de creencia en la veracidad de la hipótesis.
+\end{enumerate}
 \end{document}
