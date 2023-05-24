@@ -439,4 +439,34 @@ Un ejemplo: En el caso del experimento del lanzamiento de un dado, hay seis posi
 \subsubsection*{Probabilidad clásica.}
 \subsubsection*{Probabilidad empírica.}
 \subsubsection*{Probabilidad subjetiva.}
+
+\subsection{Teorema de Bayes}
+El teorema de Bayes es un caso de aplicación de la probabilidad condicional, el cual se puede aplicar cuando se cuenta con información a priori de los datos que se están analizando. Pero para comenzar a introducirnos a este teorema primero tenemos que tener en cuenta una serie de cosas.
+\begin{enumerate}
+	\item Tener conocimiento de que es un diagrama de árbol, como leerlos y como este nos va a ayudar en el planteamiento del problema.
+	\item El concepto de probabilidad total de un evento.
+	\item La regla general de la multiplicación, que se utiliza para obtener la fórmula del teorema de Bayes.
+\end{enumerate}
+\subsubsection*{Diagrama de Árbol}
+Los diagramas de árbol, son una forma de representar las distintas condiciones o alternativas a las que están sometidas las variables de un problema, para su mejor comprensión supongamos que nos encontramos con el siguiente problema:
+El 0,1\% de la población de un país está infectada con una bacteria, y la prueba para detectar la enfermedad tiene una efectividad del 99\% en las personas enfermas y para las personas que no están infectadas este porcentaje es de 2\%.
+Con fin de representar estos datos de forma más gráfica y ordenada, podemos poner toda esta información en un diagrama de árbol, el cual quedaría conformado de la siguiente manera.
+
+\includegraphics[width=12cm, height=10cm]{imagenes/diagrama_arbol.png}
+Como se puede observar cada rama del árbol contiene los respectivos valores representativos para cada situación. Un dato importante a tener en cuenta a la hora de realizar este tipo de diagrama es que la suma de las probabilidades de las ramas pertenecientes al mismo padre deben dar siempre 1, por ejemplo, si la probabilidad de estar infectado es de 0,001 entonces la de no estar infectado debe ser si o si 0,999; ya que la sumas de estos dos siempre tiene que dar 1.
+\subsubsection*{Teorema de la Probabilidad Total}
+Siguiendo con el ejemplo presentado anteriormente, supongamos que queremos saber cual es la probabilidad de que una persona de positiva en la prueba, independientemente de si está infectado con la bacteria o no.
+En ese caso se tendrán que sumar todos los caminos posibles del diagrama de árbol que nos lleve hacia ese evento específico. Aunque ya existe una fórmula que nos facilita encontrar la probabilidad total.
+\[ \sum_{j=1}^{k} P(S_j)P(A|S_j) \]
+Nótese que en sí esta ecuación en primera instancia es la sumatoria de las intersecciones entre los demás eventos del experimento, con el evento que nosotros estamos analizando, en nuestro caso cuál es la probabilidad de que de positivo una prueba, independientemente de si está infectado o no. Dicha sumatoria nos quedaría de la siguiente manera.
+\[ \sum_{j=1}^{k} S_j \cap A \]
+Esta fórmula se transforma, en la del teorema de la probabilidad total, si aplicamos la regla general de la multiplicación, en la cual una intersección entre eventos se puede representar como la multiplicación de la siguiente manera:
+\begin{quote}
+	\item $P(S \cap A) = P(S)P(A|S)$
+	\item $P(S \cap A) = P(A)P(S|A)$
+\end{quote}
+\subsubsection*{Fórmula del Teorema de Bayes}
+Supongamos ahora que queremos saber la probabilidad de que la prueba de positiva siendo que estas infectado con la bacteria. En ese caso ese valor sería obtenido a través de la siguiente fórmula:
+\[ P(S_i|A)= \frac{P(S_i)P(A|S_i)}{\sum_{j=1}^k P(S_j)P(A|S_j)} \]
+Como podemos ver, esta fórmula es la misma que para la probabilidad condicionada, con la diferencia que se realiza una serie de cambios leves, resultado de aplicar las propiedades antes mencionadas.
 \end{document}
