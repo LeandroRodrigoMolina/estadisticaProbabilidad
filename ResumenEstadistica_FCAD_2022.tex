@@ -2,6 +2,7 @@
 \usepackage{graphicx}
 \usepackage{blindtext}
 \usepackage{hyperref}
+\usepackage{amsmath}
 \graphicspath{ {./images/} }
 \usepackage[spanish]{babel}
 %opening
@@ -423,23 +424,54 @@ En general es un numero que describe la posibilidad de que algo suceda.
 \end{quote}
 Es común que una probabilidad sea expresada en forma décima, como 0.70, 0.27 o 0.50. No obstante, también se da forma de fracción, como 7/10, 27/100 o 1/2. Se puede suponer cualquier numero de 0 a 1, inclusive. La probabilidad de 1 representa algo que seguramente sucederá, y la probabilidad de 0 representa algo que no sucederá. Cuanto mas próxima se encuentre una probabilidad a 0, mas improbable es que el evento suceda. Cuanto mas próxima se encuentre la probabilidad a 1, mas seguro que suceda. En el estudio de la probabilidad se utilizan tres palabras clave: \textbf{experimento, resultado} y \textbf{evento}.
 \begin{quote}
-	\textbf{Experimento}: Proceso que induce a que ocurra una y solo una de varias posibles observaciones.
+	\textbf{Experimento}: Proceso que induce a que ocurra una y solo una de varias posibles observaciones. Es el proceso mediante el cual se obtiene un resultado (observación o medición)
 \end{quote}
-Respecto de la probabilidad, un experimento tiene dos o mas posibles resultados y no sabe cual ocurrirá.
+Respecto de la probabilidad, un experimento tiene dos o mas posibles resultados y no sabe cual ocurrirá. Un experimento es aleatorio cuando no se puede predecir el resultado que se va a obtener. Por ejemplo, lanzar una moneda, tirar un dado, jugar a la lotería, realizar una encuesta, etc.
 \begin{quote}
 	\textbf{Resultado}: Resultado particular de un experimento.
 \end{quote}
 Un ejemplo: lanzar una moneda al aire constituye un experimento. Usted puede observar el lanzamiento de una moneda, pero no esta seguro si caerá \textit{cara} o \textit{cruz}. Si se lanza una moneda, un resultado particular es \textit{cara}. El otro posible resultado es \textit{cruz}. Cuando se observan uno o mas resultados en los experimentos constituyen un evento.
 \begin{quote}
-	\textbf{Evento}: Conjunto de uno o mas resultados de un experimento.
+	\textbf{Evento}: Conjunto de uno o mas resultados de un experimento. Se lo suele denotar con una letra mayúscula.
 \end{quote}
 Un ejemplo: En el caso del experimento del lanzamiento de un dado, hay seis posibles resultados, pero existen varios posibles eventos. Cuando se cuenta el numero de miembros de la junta directiva de las compañías de Fortune 500 que tienen mas de 60 años de antigüedad el numero posibles de resultados varia de cero al total de miembros. Hay un numero aun mayor de eventos posibles en este experimento.
 \textbf{PONER TABLA PAGINA 147, CAP 5.2 ¿que es la probabilidad?}
 \subsection{Enfoques para asignar probabilidades.}
 \subsubsection*{Probabilidad clásica.}
+La \textbf{probabilidad clásica} parte del supuesto de que los resultados de un experimento son igualmente posibles. De acuerdo con el punto de vista clásico, la probabilidad de un evento que se esta llevando a cabo se calcula dividiendo el numero de resultados favorables entre el numero de posibles resultados.
+\begin{quote}
+	\textbf{Probabilidad clásica}: \[\text{Probabilidad de un evento = } \frac{\text{Numero de resultados favorables}}{\text{Numero total de posibles resultados}} \]
+\end{quote}
+El concepto de conjuntos mutuamente excluyentes, recordá que cuando creamos clases de tal manera que un evento particular se incluyera en una sola de las clases y que no hubiera superposición entre ellas. Por lo tanto, solo uno de varios eventos puede presentarse en cierto momento.
+\begin{quote}
+	\textbf{Mutuamente excluyente}: El hecho de que un evento se presente significa que ninguno de los demás eventos puede ocurrir al mismo tiempo.
+\end{quote}
+Unos ejemplos: La variable \textit{genero} da origen a resultados mutuamente excluyentes: hombre y mujer. Un empleado seleccionado al azar es hombre o mujer, pero no puede tener ambos géneros. Una pieza fabricada es aceptable o no lo es. La pieza no puede ser aceptable e inaceptable al mismo tiempo. En una muestra de piezas fabricadas, el evento de seleccionar una pieza no aceptable y el evento de seleccionar una pieza aceptable son mutuamente excluyentes. \linebreak
+Si un experimento incluye un conjunto de eventos con todo tipo de resultados posibles, como los eventos "un numero par" y "un numero impar" en el experimento del lanzamiento del dado, entonces el conjunto de eventos es \textbf{colectivamente exhaustivo}. En el experimento del lanzamiento del dado, cada resultado sera par o impar. Por consiguiente, el conjunto es colectivamente exhaustivo.
+\begin{quote}
+	\textbf{Colectivamente exhaustivo}: Por lo menos uno de los eventos debe ocurrir cuando se lleva a cabo un experimento.
+\end{quote}
+Si el conjunto de eventos es colectivamente exhaustivo y los eventos son mutuamente excluyentes, la suma de las probabilidades es 1. Resulta innecesario llevar a cabo un experimento para determinar la probabilidad de un evento mediante el enfoque clásico, ya que el numero total de resultados se sabe antes de realizar el experimento. Por lógica, es posible determinar la probabilidad de sacar una cruz al lanzar una moneda o tres caras al lanzar tres monedas.
 \subsubsection*{Probabilidad empírica.}
-\subsubsection*{Probabilidad subjetiva.}
-
+La \textbf{probabilidad empírica} o \textbf{frecuencia relativa}, el segundo tipo de probabilidad, se basa en el numero de veces que ocurre el evento como proporción del numero de intentos conocidos.
+\begin{quote}
+	\textbf{Probabilidad empírica}: La probabilidad de que un evento ocurra representa una fracción de los eventos similares que sucedieron en el pasado.
+\end{quote}
+En términos de una formula:
+\[ \text{Probabilidad empírica} = \frac{\text{Numero de veces que el evento ocurre}}{\text{Numero total de observaciones}}\]
+El enfoque empírico de la probabilidad se basa en la llamada \textit{ley de los grandes números}. La clave para determinar probabilidades de forma empírica consiste en que una mayor cantidad de observaciones proporcionaran un calculo mas preciso de la probabilidad.
+\begin{quote}
+	\textbf{Ley de los grandes números}:  En una gran cantidad de intentos, la probabilidad empírica de un evento se aproximara a su probabilidad real.
+\end{quote}
+Para explicar la ley de los grandes números, supongamos que lanzamos una moneda común. El resultado de cada lanzamiento es cara o cruz. Si se lanza la moneda una sola vez, la probabilidad empírica de las caras es cero o uno. Si lanzamos la moneda una gran cantidad de veces, la probabilidad del resultado de las caras se aproximara a 0.5. Observa que conforme incrementamos el numero de intentos, la probabilidad empírica de que salga una cara se aproxima a 0.5, que es su valor de acuerdo con el enfoque clásico de la probabilidad. ¿Que demostramos? Que a partir de la definición clásica de probabilidad, la posibilidad de obtener una cara en un solo lanzamiento de una moneda común es de 0.5. Según el enfoque empírico de la frecuencia relativa de la probabilidad, la probabilidad del evento se aproxima al mismo valor determinado de acuerdo con la definición clásica de probabilidad. Este razonamiento permite emplear el enfoque empírico y de la frecuencia relativa para determinar una probabilidad.
+\subsection{Reglas para calcular probabilidades}
+Ahora, que definimos probabilidad y descrito sus diferentes enfoques, cabe atender al calculo de la probabilidad de dos o mas eventos aplicando las reglas de la adición y multiplicación.
+\subsubsection*{Regla general de la adición}
+\subsubsection*{Regla especial de la adición}
+\subsubsection*{Regla del complemento}
+\subsubsection*{Regla general de la multiplicación}
+\subsubsection*{Regla especial de la multiplicación}
+\subsection{Principios de conteo}
 \subsection{Teorema de Bayes}
 El teorema de Bayes es un caso de aplicación de la probabilidad condicional, el cual se puede aplicar cuando se cuenta con información a priori de los datos que se están analizando. Pero para comenzar a introducirnos a este teorema primero tenemos que tener en cuenta una serie de cosas.
 \begin{enumerate}
