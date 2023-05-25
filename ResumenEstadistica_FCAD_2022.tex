@@ -467,8 +467,27 @@ Para explicar la ley de los grandes números, supongamos que lanzamos una moneda
 \subsection{Reglas para calcular probabilidades}
 Ahora, que definimos probabilidad y descrito sus diferentes enfoques, cabe atender al calculo de la probabilidad de dos o mas eventos aplicando las reglas de la adición y multiplicación.
 \subsubsection*{Regla general de la adición}
+Cuando dos eventos ocurren al mismo tiempo, la probabilidad se denomina \textbf{probabilidad conjunta}.
+\begin{quote}
+	\textbf{Probabilidad conjunta}: Probabilidad que mide la posibilidad de que dos o mas eventos sucedan simultáneamente.
+\end{quote}
+Esta regla para dos eventos designados A y B se escribe:
+\[ \text{Regla general de la  adición } \text{P(A o B)} = \text{P(A) + P(B) - P(A y B)}\]
+En el caso de la expresión P(A o B), la conjunción o sugiere que puede ocurrir A o puede ocurrir B. Esto también incluye posibilidad de que A y B ocurran. Tal uso o a veces se denomina \textbf{inclusivo}. También es posible escribir P(A o B o Ambos) para hacer hincapié en el hecho de que la unión de dos eventos incluye la intersección de A y B. Si comparamos las reglas general y especial de la adición, la diferencia que importa consiste en determinar si los eventos son mutuamente excluyentes. Si lo son, entonces la probabilidad conjunta P(A y B) es 0 y podríamos aplicar la regla especial de la adición. De lo contrario, debemos tomar en cuenta la probabilidad conjunta y aplicar la regla general de la adición.
+\\Por ejemplo, si tenemos los eventos:\\
+A: obtener un 1 o un 4. En símbolos: A = \{1,4\} \\
+B: obtener un numero par. En símbolos: B = \{2,4,6\}
+Entonces:\\
+\[ \text{P(A} \cup \text{B)} = \frac{2}{6} + \frac{3}{6} - \frac{1}{6} = \frac{4}{6} = \frac{2}{3} \text{ por lo que: } \text{P(A} \cup \text{B)} = \frac{2}{3}
+\]
+
 \subsubsection*{Regla especial de la adición}
+Para aplicar la regla especial de la adición, los eventos deben ser \textit{mutuamente excluyentes}. Recordá que significa que cuando un evento ocurre, ninguno de los otros eventos puede ocurrir al mismo tiempo. Si dos eventos A y B son mutuamente excluyentes, la regla especial de la adición establece que la probabilidad de que ocurra uno u otro es igual a la suma de sus probabilidades. Esta regla se expresa mediante la siguiente formula:
+\[ \text{\textbf{Regla especial de la adición}: }\text{P(A o B)} = \text{P(A) + P(B)}\]
+En el caso de los tres eventos mutuamente excluyentes designados A, B y C, la regla se expresa de la siguiente manera:
+\[ \text{P(A o B o C)} = \text{P(A) + P(B) + P(C)} \]
 \subsubsection*{Regla del complemento}
+
 \subsubsection*{Regla general de la multiplicación}
 \subsubsection*{Regla especial de la multiplicación}
 \subsection{Principios de conteo}
