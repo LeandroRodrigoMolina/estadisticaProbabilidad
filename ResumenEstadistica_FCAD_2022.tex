@@ -30,7 +30,6 @@
 
 \tableofcontents
 
-
 \pagebreak
 \section{Capitulo 1. ¿Que es la estadística?}
 \subsection{¿Por qué se debe estudiar estadística?}
@@ -463,7 +462,7 @@ El enfoque empírico de la probabilidad se basa en la llamada \textit{ley de los
 \begin{quote}
 	\textbf{Ley de los grandes números}:  En una gran cantidad de intentos, la probabilidad empírica de un evento se aproximara a su probabilidad real.
 \end{quote}
-Para explicar la ley de los grandes números, supongamos que lanzamos una moneda común. El resultado de cada lanzamiento es cara o cruz. Si se lanza la moneda una sola vez, la probabilidad empírica de las caras es cero o uno. Si lanzamos la moneda una gran cantidad de veces, la probabilidad del resultado de las caras se aproximara a 0.5. Observa que conforme incrementamos el numero de intentos, la probabilidad empírica de que salga una cara se aproxima a 0.5, que es su valor de acuerdo con el enfoque clásico de la probabilidad. ¿Que demostramos? Que a partir de la definición clásica de probabilidad, la posibilidad de obtener una cara en un solo lanzamiento de una moneda común es de 0.5. Según el enfoque empírico de la frecuencia relativa de la probabilidad, la probabilidad del evento se aproxima al mismo valor determinado de acuerdo con la definición clásica de probabilidad. Este razonamiento permite emplear el enfoque empírico y de la frecuencia relativa para determinar una probabilidad.
+Para explicar la ley de los grandes números, supongamos que lanzamos una moneda común. El resultado de cada lanzamiento es cara o cruz. Si se lanza la moneda una sola vez, la probabilidad empírica de las caras es cero o uno. Si lanzamos la moneda una gran cantidad de veces, la probabilidad del resultado de las caras se aproximara a 0.5. Observa que conforme incrementamos el numero de intentos, la probabilidad empírica de que salga una cara se aproxima a 0.5, que es su valor de acuerdo con el enfoque clásico de la probabilidad. ¿Que demostramos? Que a partir de la definición clásica de probabilidad, la posibilidad de obtener una cara en un solo lanzamiento de una moneda común es de 0.5. Según el enfoque empírico de la frecuencia relativa de la probabilidad, la probabilidad del evento se aproxima al mismo valor determinado de acuerdo con la definición clásica de probabilidad. Este razonamiento permite emplear el enfoque empírico y de la frecuencia relativa para determinar una probabilidad. 
 \subsection{Reglas para calcular probabilidades}
 Ahora, que definimos probabilidad y descrito sus diferentes enfoques, cabe atender al calculo de la probabilidad de dos o mas eventos aplicando las reglas de la adición y multiplicación.
 \subsubsection*{Regla general de la adición}
@@ -475,8 +474,8 @@ Esta regla para dos eventos designados A y B se escribe:
 \[ \text{Regla general de la  adición } \text{P(A o B)} = \text{P(A) + P(B) - P(A y B)}\]
 En el caso de la expresión P(A o B), la conjunción o sugiere que puede ocurrir A o puede ocurrir B. Esto también incluye posibilidad de que A y B ocurran. Tal uso o a veces se denomina \textbf{inclusivo}. También es posible escribir P(A o B o Ambos) para hacer hincapié en el hecho de que la unión de dos eventos incluye la intersección de A y B. Si comparamos las reglas general y especial de la adición, la diferencia que importa consiste en determinar si los eventos son mutuamente excluyentes. Si lo son, entonces la probabilidad conjunta P(A y B) es 0 y podríamos aplicar la regla especial de la adición. De lo contrario, debemos tomar en cuenta la probabilidad conjunta y aplicar la regla general de la adición.
 \\Por ejemplo, si tenemos los eventos:\\
-A: obtener un 1 o un 4. En símbolos: A = \{1,4\} \\
-B: obtener un numero par. En símbolos: B = \{2,4,6\}
+A: obtener un 1 o un 4. En símbolos: A = \{1, 4\} \\
+B: obtener un numero par. En símbolos: B = \{2, 4, 6\}
 Entonces:\\
 \[ \text{P(A} \cup \text{B)} = \frac{2}{6} + \frac{3}{6} - \frac{1}{6} = \frac{4}{6} = \frac{2}{3} \text{ por lo que: } \text{P(A} \cup \text{B)} = \frac{2}{3}
 \]
@@ -486,11 +485,51 @@ Para aplicar la regla especial de la adición, los eventos deben ser \textit{mut
 \[ \text{\textbf{Regla especial de la adición}: }\text{P(A o B)} = \text{P(A) + P(B)}\]
 En el caso de los tres eventos mutuamente excluyentes designados A, B y C, la regla se expresa de la siguiente manera:
 \[ \text{P(A o B o C)} = \text{P(A) + P(B) + P(C)} \]
+\\Por ejemplo, si tenemos los eventos:\\
+A: obtener un 1 o un 3. En símbolos: A = \{1, 3\} \\
+B: obtener un numero par. En símbolos: B = \{2, 4, 6\}
+Entonces, como son eventos disjuntos:\\
+\[ \text{P(A} \cup \text{B)} = \frac{2}{6} + \frac{3}{6} = \frac{5}{6} = \text{ por lo que: } \text{P(A} \cup \text{B)} = \frac{5}{6}
+\]
 \subsubsection*{Regla del complemento}
-
+Sea el A y su complemento $A^{c}$ entonces tenemos que:
+\[ P(A) + P(A^{c}) = 1 \text{ y } P(A^{c}) = 1 - P(A) \]
+Por ejemplo, si para el experimento 'tirar un dado al aire'  consideramos el suceso A 'obtener un 2'. Entonces, $A^{c}$ es 'no obtener un 2'.
+\[ P(A) = \frac{1}{6} \text{ y } P(A^{c}) = \frac{5}{6}\]
+Por lo tanto:
+\[ P(A) + P(A^{c}) = \frac{1}{6}  + \frac{5}{6} \text{ y } P(A^{c}) = 1 - \frac{1}{6} = \frac{5}{6} \]
+Tal es la regla \textbf{regla del complemento.} Se emplea para determinar la probabilidad de que un evento ocurra restando de 1 la probabilidad de un evento que no ha ocurrido. Esta regla es útil porque a veces es mas fácil calcular la probabilidad de que un evento suceda determinando la probabilidad de que no suceda y restando el resultado de 1. Observa que los eventos A y $A^{c}$ son mutuamente excluyentes y colectivamente exhaustivos. Por consiguiente, las probabilidades de A y $A^{c}$ suman 1.
 \subsubsection*{Regla general de la multiplicación}
+La regla general de la multiplicación sirve para determinar la probabilidad conjunta de dos eventos cuando estos no son independientes. Por ejemplo, cuando el evento B ocurre después del evento A, y A influye en la probabilidad de que el evento B suceda, entonces A y B no son independientes. Si dos eventos no son independientes, se dice que son \textbf{dependientes}. Ejemplo de dependencia: Supongamos que hay 10 latas de refresco en un refrigerador, 7 de los cuales son normales y 3 dietéticos. Se saca una lata del refrigerador. La probabilidad de que sea una lata de refresco dietético es de 3/10, y la probabilidad de que sea una lata de refresco normal es de 7/10. Luego se elige una segunda lata del refrigerador sin devolver la primera. La probabilidad de que la segunda lata sea de refresco dietético depende de que la primera lo haya sido o no. La probabilidad de que la segunda lata sea de refresco dietético es:
+\begin{quote}
+	2/9, si la primera bebida es dietética (solo dos latas de refresco dietético quedan en el refrigerador).
+	\item 3/9, si la primera lata elegida es normal (los tres refrescos aun están en el refrigerador).
+\end{quote}
+La denominación adecuada de la fracción 2/9 (o 3/9) es \textbf{probabilidad condicional}, ya que su valor se encuentra condicionado (o depende) del hecho de que un refresco regular o dietético haya sido el primer en ser seleccionado del refrigerador.
+\begin{quote}
+	\textbf{Probabilidad condicional}: Probabilidad de que un evento en particular ocurra, dado que otro evento haya acontecido.
+	Se denota por P(A$|$B), la barra vertical se lee 'dado' y los eventos que aparecen a la derecha de la barra son aquellos que se saben que han ocurrido. La probabilidad condicional del evento A, dado que el evento B ha ocurrido, es: 
+	\[ P(A|B)  = \frac{P(A \cap B)}{P(B)}\]
+	La probabilidad condicional del evento B, dado que el evento A ha ocurrido, es:
+	\[ P(B|A)  = \frac{P(A \cap B)}{P(A)}\]	
+Estas fórmulas se pueden obtener despejando $P(A|B)$ y $P(B|A)$ de las fórmulas anteriores
+\end{quote}	
+La regla general de la multiplicación establece que en caso de dos eventos, A y B, la probabilidad conjunta de ambos eventos ocurran se determina multiplicando la probabilidad de que ocurra el evento A por la probabilidad de que ocurra el evento B, dado que A ha ocurrido. Simbólicamente, la probabilidad conjunta, P(A y B), se calcula de la siguiente manera:
+\[ \textbf{Regla general de la multiplicación: } \text{P(A $\cap$ B)} = \text{P(A)} .\text{P(B$|$A)} 
+\text{ o } \text{P(A $\cap$ B)} = \text{P(B)} .\text{P(A$|$B)}
+\]
 \subsubsection*{Regla especial de la multiplicación}
+La regla especial de la multiplicación requiere que dos eventos, A y B, sean independientes, y lo son si el hecho que uno ocurra no altera la probabilidad de que el otro suceda.
+\begin{quote}
+	\textbf{Independencia}: Si un evento ocurre, no tiene ningún efecto sobre la probabilidad de que otro evento acontezca.
+\end{quote}
+En el caso de dos eventos independientes A y B, la probabilidad de que A y B ocurran se determina multiplicando las dos probabilidades, tal es la \textbf{regla especial de la multiplicación}, cuya expresión simbólica es la siguiente:
+\[ \text{\textbf{Regla especial de la multiplicación: }} \text{P(A $\cap$ B) = P(A).P(B)}\]
+En el caso de tres eventos independientes, A, B y C, la regla especial de la multiplicación que se utiliza para determinar la probabilidad de que los tres eventos ocurran es:
+\[ \text{\textbf{Regla especial de la multiplicación para 3: }} \text{P(A $\cap$ B $\cap$ C) = P(A).P(B).P(C)}\]
+
 \subsection{Principios de conteo}
+
 \subsection{Teorema de Bayes}
 El teorema de Bayes es un caso de aplicación de la probabilidad condicional, el cual se puede aplicar cuando se cuenta con información a priori de los datos que se están analizando. Pero para comenzar a introducirnos a este teorema primero tenemos que tener en cuenta una serie de cosas.
 \begin{enumerate}
