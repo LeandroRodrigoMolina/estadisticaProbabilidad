@@ -529,7 +529,37 @@ En el caso de tres eventos independientes, A, B y C, la regla especial de la mul
 \[ \text{\textbf{Regla especial de la multiplicación para 3: }} \text{P(A $\cap$ B $\cap$ C) = P(A).P(B).P(C)}\]
 
 \subsection{Principios de conteo}
-
+Si la cantidad de posibles resultados de un experimento es pequeña, resulta relativamente fácil contarlas. Por ejemplo, existen seis posibles resultados del lanzamiento de un dado. Sin embargo, si hay un numero muy grande de resultados, tal como el numero de caras y cruces en un experimento de 10 lanzamientos de una moneda, seria tedioso contar todas las posibilidades. Todas podrían ser caras, una cruz y nueve caras, y así sucesivamente.  Para facilitar la cuenta se analizarán tres fórmulas para contar: la \textbf{fórmula de la multiplicación} (no confundir con la regla de la multiplicación), la \textbf{fórmula de las permutaciones} y la \textbf{fórmula de de las combinaciones}.
+\subsubsection*{Formula de la multiplicación}
+\begin{quote}
+	\textbf{Formula de la multiplicación}: Si hay \textit{m} formas de hacer una cosa y \textit{n} formas de hacer otra, hay $\textit{m } X\textit{ n}$ formas de hacer ambas.
+	\item En términos de formula: $\text{Numero total de disposiciones} = (m).(n)$
+\end{quote}
+Esta fórmula se puede extender a más de dos eventos. En el caso de tres eventos \textit{m}, \textit{n} y \textit{o}:
+\[ \text{Numero total de disposiciones} = (m)(n)(o) \]
+\subsubsection*{Formula de las permutaciones}
+La fórmula de la multiplicación se aplica para determinar el número de posibles disposiciones de dos o más grupos. En contraste, \textbf{la fórmula de las permutaciones} se aplica para determinar el número posible de disposiciones cuando solo hay un grupo de objetos. Ejemplo de permutacion:
+\begin{itemize}
+	\item Tres piezas electrónicas (un transistor, un LED y un sintetizador) se van a montar en una unidad que se conecta a un aparato de televisión. Estas se pueden montar en cualquier orden. La pregunta es: ¿de cuentas formas pueden montarse?
+\end{itemize}
+Un orden seria: primero el transistor, en seguida el LED y en tercer lugar el sintetizador. A esta distribución se le conoce como \textbf{permutación}.
+\begin{quote}
+	\textbf{Permutación}: Cualquier distribución de \textit{r} objetos seleccionados de un solo grupo de \textit{n} posibles objetos.
+	\item \textbf{Formula de las permutaciones}: \[ _{n}P_{r} = \frac{n!}{(n - r)! }\]
+\end{quote}
+donde:
+\begin{quote}
+	\textit{n} representa el total de objetos;
+	\item \textit{r} representa el total de objetos seleccionados.
+\end{quote}
+La solución del ejemplo es que hay tres piezas electrónicas que van a montarse acá, así que $n = 3$. Como las tres se van a insertar en la unidad conectable, $r = 3$. Usa la formula y te da 6, que significa que hay seis formas en la que las tres piezas electrónicas, se pueden ordenar. 
+\subsubsection*{Formula de las combinaciones}
+Si el orden de los objetos seleccionados \textit{no} es importante, cualquier selección se denomina \textbf{combinación}. La formula para contar el numero \textit{r} combinaciones de objetos de un conjunto de \textit{n}objeto es:
+\begin{quote}
+	\textbf{Formula de las combinaciones}:  \[ _{n}C_{r} = \frac{n!}{r! (n - r)! }\]
+\end{quote}
+Por ejemplo, si los ejecutivos Juan, Pedro y Fernando van a ser elegidos para formar un comité de negociación de una fusión, solo existe una posible combinación con estros tres; el comité formado por Juan, Pedro y Fernando es el mismo comité que el que forman Pedro, Fernando y Juan. De acuerdo con la formula de las combinaciones:
+\[ _{3}C_{3} = \frac{3!}{3! (3 - 3)! } =  1\]
 \subsection{Teorema de Bayes}
 El teorema de Bayes es un caso de aplicación de la probabilidad condicional, el cual se puede aplicar cuando se cuenta con información a priori de los datos que se están analizando. Pero para comenzar a introducirnos a este teorema primero tenemos que tener en cuenta una serie de cosas.
 \begin{enumerate}
