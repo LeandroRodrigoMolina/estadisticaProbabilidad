@@ -600,4 +600,45 @@ Se pueden hallar ejemplos de variables aleatorias discretas en numerosas situaci
  	\item \textbf{Varianza:} $\sigma = \sqrt{n(\frac{M}{N})(\frac{N-M}{N})(\frac{N-n}{N-1})}$
  \end{quote}
 \subsection{Distribuciones de probabilidad continuas}
+Las distribuciones de probabilidad continuas son una parte fundamental de la estadística y la probabilidad. A diferencia de las distribuciones de probabilidad discretas, que se utilizan para eventos que tienen resultados finitos y distintos (como lanzar una moneda), las distribuciones de probabilidad continuas se utilizan para eventos que tienen un número infinito de posibles resultados (como medir la altura de una persona). Las distribuciones de probabilidad continuas se describen a través de una función de densidad de probabilidad. El área bajo la curva de la función de densidad de probabilidad en un intervalo dado proporciona la probabilidad de que el resultado caiga en ese intervalo. En un histograma de frecuencia relativa se puede ver mientras mas barras haya se hace una curva mas suave. Esta curva se describe la \textbf{distribución de probabilidad de la variable aleatoria continua x}.
+\\ Ahora, ¿como podemos crear un modelo para una distribución de una variable continua?
+Para crear un modelo necesitamos crear una función de densidad de probabilidad (\textbf{PDF} en ingles, de \textbf{Probability Density Function}).
+Una función de densidad de probabilidad es una función que describe la probabilidad relativa de que una variable aleatoria tome un valor dado. La probabilidad de que una variable aleatoria continua caiga en un intervalo particular se dada por el área bajo la curva de la función de densidad en ese intervalo.
+\\
+Una función f(x) es una función de densidad de probabilidad (PDF) válida para una variable aleatoria continua si satisface las siguientes dos propiedades:
+\begin{enumerate}
+	\item \textbf{No Negatividad}: Para todo x en el conjunto de números reales, la función f(x) debe ser mayor o igual a cero. Esto tiene sentido ya que la probabilidad nunca puede ser un valor negativo. Matemáticamente, se representa como: $f(x) \geq 0$ para todo x.
+	\item \textbf{Normalización}: La integral de la función f(x) sobre todo el espacio de la variable debe ser igual a 1. Esto se debe a que la suma de las probabilidades de todos los posibles resultados debe ser igual a 1. En términos matemáticos, se representa como: $ \int_{-\infty}^{\infty}f(x)dx = 1 $, la integral se realiza sobre todo el conjunto de números reales.
+\end{enumerate}
+Estas son las propiedades básicas que toda función de densidad de probabilidad debe cumplir. Sin embargo, dependiendo de la distribución específica que se esté modelando, la PDF puede tener propiedades adicionales. Por ejemplo, la PDF de una distribución normal está definida por dos parámetros: la media y la desviación estándar, y tiene una forma simétrica en forma de campana.
+\\
+Las distribuciones de probabilidad continua tienen diversas propiedades que son las siguientes:
+
+Las distribuciones de probabilidad continuas, descritas mediante una función de densidad de probabilidad (PDF), tienen las siguientes propiedades:
+
+\begin{enumerate}
+	\item \textbf{El área bajo una distribución continua de probabilidad es igual a 1:} Esto es una consecuencia de la definición de una PDF. Matemáticamente, para cualquier PDF $f(x)$, se cumple que: 
+	\[
+	\int_{-\infty}^{+\infty} f(x) \, dx = 1
+	\]
+	Por lo tanto, el área total bajo la curva de la PDF debe ser igual a 1.
+	
+	\item \textbf{La probabilidad de que $x$ caiga en un intervalo particular, por ejemplo de $a$ hasta $b$, es igual al área bajo la curva entre los dos puntos $a$ y $b$:} Dado que la PDF proporciona la densidad de probabilidad en cada punto, para encontrar la probabilidad de que la variable aleatoria caiga en un intervalo, necesitamos integrar la densidad de probabilidad en ese intervalo. Matemáticamente, esto se representa como:
+	\[
+	P(a \leq X \leq b) = \int_{a}^{b} f(x) \, dx
+	\]
+	
+	\item \textbf{$P(X = a) = 0$ para variables aleatorias continuas:} Dado que hay infinitamente muchos posibles valores que la variable aleatoria podría tomar, la probabilidad de un valor específico es infinitesimalmente pequeña. Por lo tanto:
+	\[
+	P(X = a) = 0
+	\]
+	
+	\item \textbf{$P(X \geq a) = P(X > a)$ y $P(X \leq a) = P(X < a)$:} Dado que la probabilidad de un valor específico es cero, no hace ninguna diferencia si incluimos ese valor específico en el intervalo o no. Por lo tanto:
+	\[
+	P(X \geq a) = P(X > a) \quad \text{y} \quad P(X \leq a) = P(X < a)
+	\]
+	
+	Es importante destacar que estas propiedades son específicas de las variables aleatorias continuas y no se aplican necesariamente a las variables aleatorias discretas.
+\end{enumerate}
+
 \end{document}
