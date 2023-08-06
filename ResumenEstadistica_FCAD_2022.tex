@@ -640,5 +640,91 @@ Las distribuciones de probabilidad continuas, descritas mediante una función de
 	
 	Es importante destacar que estas propiedades son específicas de las variables aleatorias continuas y no se aplican necesariamente a las variables aleatorias discretas.
 \end{enumerate}
+\section{Capitulo 5. Planes Muestrales y Diseño Experimental}
+La forma en que una muestra se selecciona recibe el nombre de \textbf{plan muestral} o \textbf{diseño experimental} y determina la cantidad de información de la muestra. Saber el plan muestral empleado en una situación particular permitirá medir la confiabilidad, también llamada bondad, de la inferencia.
+\\ El muestreo aleatorio simple es un plan muestral de uso común en el que cada muestra de tamaño $n$ tiene la misma probabilidad de ser seleccionado. Por ejemplo, supongamos que se desea seleccionar una muestra de tamaño $n = 2$ de una población que contiene $N = 4$ objetos. Si los cuatro objetos están identificados por los símbolos $x_1$, $x_2$, $x_3$ y $x_4$, hay seis pares distintos que podrían seleccionarse. Si la muestra de $n = 2$ observaciones se selecciona de modo que cada una de estas seis muestras tenga la misma probabilidad de selección, dada por $1/6$, entonces la muestra resultante se denomina \textbf{muestra aleatoria simple} o únicamente \textbf{muestra aleatoria}.
+\begin{quote}
+	\textbf{Definición:} Si una muestra de $n$ elementos se selecciona de entre una población de $N$ elementos, usando un plan muestral en el que cada una de las posibles muestras tiene la misma probabilidad de selección, entonces se dice que el muestreo es aleatorio y la muestra resultante es una muestra aleatoria simple.
+\end{quote}
+Un muestreo aleatorio perfecto es difícil de obtener en la práctica. Si el tamaño $N$ de la población es pequeño, se podría escribir cada uno de los $N$ números en una ficha, mezclar las fichas y seleccionar una muestra de $n$ fichas. Los números que seleccione corresponden a las $n$ mediciones que aparecen en la muestra. Como este método no siempre es práctico, un método más sencillo y confiable utiliza números aleatorios, es decir, dígitos generados de modo que los valores de 0 a 9 se presentan al azar y con igual frecuencia.
+\\ Los estudios que se realizan sobre datos que ya existan con posterioridad antes de que nosotros decidamos observarlos o describir características de ellos se denominan \textbf{estudios observacionales}. En esta categoría caen la  mayor parte de los estudios muestrales, en los que la información se capta con un cuestionario. Con la diferencia que para este tipo de casos hay que tener particular cuidado al efectuar el estudio muestral y hay que estar atento a los siguientes problemas que se pueden presentar:
+\begin{itemize}
+	\item \textbf{No respuesta:} Usted ha seleccionado su muestra aleatoria y enviado sus cuestionarios, pero sólo 50\% de los entrevistados devolvió sus cuestionarios. ¿Las respuestas que usted recibió son representativas de toda la población o están sesgadas porque sólo quienes eran particularmente obstinados en el tema fueron escogidos para responder?
+	\item \textbf{Cobertura demasiado baja:} Usted ha seleccionado su muestra aleatoria usando registros telefónicos como una base de datos. ¿La base de datos que usó sistemáticamente excluye ciertos segmentos de la población, quizá aquellos que no tienen teléfono?
+	\item \textbf{Sesgo verbal:} El cuestionario de usted puede tener preguntas que son demasiado complicadas o tienden a confundir al lector. Posiblemente las preguntas son sensibles por naturaleza, por ejemplo, “¿Alguna vez ha consumido usted drogas?”.
+\end{itemize}
+Se han diseñado métodos para resolver algunos de estos problemas, pero sólo si usted sabe que existen. Si su encuesta está sesgada por cualquiera de estos problemas, entonces sus conclusiones no serán muy confiables, aunque haya seleccionado una muestra aleatoria.
+\\ Además del muestreo aleatorio simple, hay otros planes muestrales con carácter aleatorio y, por tanto, dan una base probabilística para hacer inferencias. Tres de esos planes están basados en muestreo estratificado, conglomerado y sistemático.
+\\ Cuando la población está formada por dos o más subpoblaciones, llamadas estratos, un plan muestral que asegura que cada subpoblación está representada en la muestra se denomina muestra aleatoria estratificada.
+\begin{quote}
+	\textbf{Definición:} Un muestreo aleatorio estratificado comprende seleccionar una muestra aleatoria simple de cada uno de un número dado de subpoblaciones o estratos.
+\end{quote}
+Se utiliza otra forma muestral aleatorio cuando las unidades muestrales disponibles son grupos de elementos, llamados conglomerados. Por ejemplo, una familia es un conglomerado de personas que viven juntas. Una manzana o vecindario de una ciudad podrían ser una cómoda unidad muestral y podría ser considerada un conglomerado para un plan determinado muestral. Cuando un conglomerado particular se incluye en la muestra, se toma un censo de cada uno de los elementos del conglomerado.
+\begin{quote}
+	\textbf{Definición:} Una muestra de conglomerados es una simple muestra aleatoria tomada de los conglomerados disponibles en la población.
+\end{quote}
+A veces la población a ser muestreada está ordenada, por ejemplo una lista de usuarios de la compañía de luz por direcciones de servicio o una lista de clientes por números de cuenta. En estas y otras situaciones, se escoge un elemento al azar de los primeros k elementos y, a continuación, cada k-ésimo elemento de ahí en adelante se incluye en la muestra.
+\begin{quote}
+	\textbf{Definición:} Una muestra aleatoria sistemática 1 en k involucra la selección aleatoria de uno de los primeros k elementos de una población ordenada y luego la selección sistemática de cada k-ésimo elemento de ahí en adelante.
+\end{quote}
+También existen otros tipos de muestras llamadas \textbf{muestras de conveniencia}, que son una forma fácil y sencilla, pero que no emplea la selección aleatoria. Dentro de estas muestras podemos encontrar al \textbf{muestreo de juicio} en donde la persona encargada de realizar el muestreo puede decidir quién estará incluido en la muestra y quien no. O el \textbf{muestreo de cuota}, en donde la composición de la muestra debe reflejar la composición de la población en alguna característica preestablecida. Cabe recalcar que en las muestras no aleatorias se pueden describir características de los datos, pero \textit{no se pueden ser usadas para realizar inferencia}.
+\subsection{Estadística y Distribuciones Muestrales}
+Cuando se selecciona una muestra aleatoria de una población, las medidas numéricas descriptivas que se calculen de la muestra se denominan \textbf{estadísticas}. Las distribuciones de probabilidad para estadísticas se llaman \textbf{distribuciones muestrales} porque, en distintos muestreos repetidos, nos proporcionan información de qué valores de la estadística pueden presentarse y con qué frecuencia se presenta cada valor.
+\begin{quote}
+	\textbf{Definición:} La distribución muestral de una estadística es la distribución de probabilidad para los posibles valores de la estadística, que resulta cuando muestras aleatorias de tamaño $n$ se sacan repetidamente de la población.
+\end{quote}
+Hay tres formas de hallar la distribución muestral de una estadística:
+\begin{enumerate}
+	\item Deducir la distribución matemáticamente usando las leyes de probabilidad.
+	\item Usar una simulación para aproximar la distribución. Esto es, saque un gran número de muestras de tamaño $n$, calculando el valor de la estadística para cada muestra y tabular los resultados en un histograma de frecuencia relativa. Cuando el número de muestras es grande, el histograma será muy cercano a la distribución teórica muestral.
+	\item Usar \textit{teoremas estadísticos} para obtener distribuciones muestrales exactas o aproximadas.
+\end{enumerate}
+\subsubsection*{Teorema del Límete Central}
+El teorema del límite central dice que, bajo condiciones más bien generales, las sumas y medias de muestras aleatorias de mediciones tomadas de una población tienden a tener una distribución aproximadamente normal. El teorema es el siguiente:
+\begin{quote}
+	\textbf{Teorema:} Si muestras aleatorias de $n$ observaciones se sacan de una población no normal con media finita $\mu$ y desviación estándar $\sigma$, entonces, cuando $n$ es grande, la distribución de muestreo de la media muestral $\overline{x}$ está distribuida normalmente en forma aproximada, con media $\mu$ y desviación estándar
+	\[
+	\frac{\sigma}{\sqrt{n}}
+	\]
+	La aproximación se va volviendo cada vez más precisa cuando $n$ se hace cada vez mas grande.
+\end{quote}
+El teorema del límite central se puede expresar de otro modo para aplicar a la suma de las mediciones muestrales $\sum{x_i}$, que, cuando $n$ se hace grande, también tiene una distribución aproximadamente normal con media $n\mu$ y desviación estándar $\sigma\sqrt{n}$.
+\\ La aportación más importante del teorema del límite central está en la inferencia estadística. Muchos estimadores que se usan para hacer inferencias acerca de parámetros poblacionales son sumas o promedios de las mediciones muestrales. Cuando el tamaño muestral es lo suficientemente grande, se puede esperar que estos estimadores tengan distribuciones muestrales que sean aproximadamente normales. Entonces se puede usar la distribución normal para describir el comportamiento de estos estimadores en muestreos repetidos y evaluar la probabilidad de observar ciertos resultados muestrales. Estas probabilidades se calculan usando la variable aleatoria normal estándar:
+\[
+z = \frac{\text{Estimador} - \text{Media}}{\text{Desviación Estándar}}
+\]
+El teorema menciona que la aproximación es válida mientras el tamaño de la muestra n sea grande. Desafortunadamente el tamaño de la muestra no se puede determinar de manera tan sencilla, ya que va a depender de la forma de la población de la cual se realiza el muestreo, y de cómo se desee usar la aproximación. No obstante los siguientes puntos pueden ayudar a determinar el tamaño de la muestra en la mayoría de los casos
+\begin{itemize}
+	\item Si la población muestreada es normal, entonces la distribución muestral de $\overline{x}$ también será normal, sin importar cuál sea el tamaño de la muestra que se escoja. Este resultado se puede demostrar en forma teórica, pero no debe ser demasiado difícil aceptarla sin prueba.
+	\item Cuando la población muestreada es aproximadamente simétrica, la distribución muestral de $\overline{x}$ se hace también aproximadamente normal para valores relativamente pequeños de $n$. Como ejemplo tomemtos el lanzamiento de una dado valanceado, vease que la probabilidad de que salga una cara de entre las demás es simétrica, pero si tomamos multiples muestras de $n = 3$ veremos como esta distribución que parecía simétrica, toma forma de montículo o campana.
+	\item Cuando la población muestreada está sesgada, el tamaño muestral $n$ debe ser más grande, con $n$ al menos 30 antes que la distribución muestral de $\overline{x}$  se haga aproximadamente normal.
+\end{itemize}
+\subsubsection*{La Distribución Muestral de la Media Muestral}
+Si la media poblacional $\mu$ es desconocida, se pueden seleccionar varias estadísticas como estimador; la media muestral $\overline{x}$ y la mediana muestral $m$ son dos que con facilidad llegan a nuestra mente. Pero ¿Cuál debe usarse?, Considere estos criterios al seleccionar el estimador para $\mu$, ¿Es fácil o difícil de calcular? ¿Produce estimaciones que sean demasiado altas o demasiado bajas de manera consistente? ¿Es más o menos variable que otros estimadores posibles?
+\\ En muchas situaciones, la media muestral x  tiene propiedades deseables como un estimador que no son compartidas por otros estimadores competidores; por tanto, se emplea en forma más general:
+\begin{itemize}
+	\item Si una muestra aleatoria de $n$ mediciones se selecciona de una población con media $\mu$ y desviación estándar $\sigma$, la distribución muestral de la media muestral $\overline{x}$ tendrá media $\mu$ y desviación estándar $\sigma/\sqrt{n}$.
+	\item Si la población tiene una distribución \textit{normal}, la distribución muestral de $\overline{x}$ estará \textit{exactamente} distribuida en forma normal, \textit{cualquiera que sea el tamaño muestral $n$}.
+	\item Si la distribución poblacional \textit{no es normal}, la distribución muestral de $\overline{x}$  estará distribuida normalmente \textit{en forma aproximada} para muestras grandes, por el teorema del límite central.
+\end{itemize}
+\begin{quote}
+	\textbf{Definición:} La desviación estándar de una estadística empleada como estimador de un parámetro poblacional también se denomina \textbf{error estándar del estimador} (SE) porque se refiere a la precisión denominada. Por tanto, la desviación estándar de $\overline{x}$ , dada por $\sigma/\sqrt{n}$, se conoce como \textbf{error estándar de la media} abreviado como SE($\overline{x}$) o sólo SE.
+\end{quote}
+\subsubsection*{La Distribución Muestral de la Proporción Muestral}
+Hay numerosos ejemplos prácticos de la variable aleatoria $x$ binomial. Una aplicación común se relaciona con la preferencia del consumidor o encuestas de opinión, donde usamos una muestra aleatoria de $n$ personas, para estimar la proporción $p$ de personas en la población que tienen una característica especificada. Si $x$ de las personas muestreadas tienen esta característica, entonces la proporción muestral
+\[
+\hat{p} = \frac{x}{n}
+\]
+se puede usar para estimar la proporción poblacional $p$.
+\\ La variable aleatoria $x$ binomial tiene una distribución de probabilidad que ya fueron descritas con anterioridad, poseyendo media $np$ y desviación estándar $\sqrt{npq}$. Como $\hat{p}$ es simplemente el valor de $x$, la distribución muestral de $\hat{p}$ es idéntica a la distribución de probabilidad de $x$, excepto que tiene una nueva escala a lo largo del eje horizontal. Y debido a este cambio de escala, la media y desviación estándar de $\hat{p}$ también tienen cambio de escala, de modo que la media de la distribución muestral de $\hat{p}$ es $p$, y su error estándar es
+\[
+SE(\hat{p}) = \sqrt{\frac{pq}{n}} \text{ ,donde } q = 1 - p
+\]
+Por último, así como podemos aproximar la distribución de probabilidad de $x$ con una distribución normal cuando el tamaño muestral $n$ es grande, podemos hacer lo mismo con la distribución muestral de $\hat{p}$.
+\\ La distribución muestral de la proporción muestral cuenta con un par de propiedades vale mencionar:
+\begin{itemize}
+	\item Si una muestra aleatoria de $n$ observaciones se selecciona de una población binomial con parámetro $p$, entonces la distribución muestral de la proporción muestral $\hat{p}$, denotada por la fórmula antes descrita, tendrá una media $p$ y una desviación o error estándar, ya descrita anteriormente.
+	\item Cuando el tamaño muestral $n$ es grande, la distribución muestral de $\hat{p}$ puede ser  aproximada por una distribución normal. Dicha aproximación será adecuada si $np > 5$ y $nq > 5$.
+\end{itemize}
 
 \end{document}
