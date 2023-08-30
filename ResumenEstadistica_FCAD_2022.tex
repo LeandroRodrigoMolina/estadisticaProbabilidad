@@ -679,7 +679,7 @@ Hay tres formas de hallar la distribución muestral de una estadística:
 	\item Usar una simulación para aproximar la distribución. Esto es, saque un gran número de muestras de tamaño $n$, calculando el valor de la estadística para cada muestra y tabular los resultados en un histograma de frecuencia relativa. Cuando el número de muestras es grande, el histograma será muy cercano a la distribución teórica muestral.
 	\item Usar \textit{teoremas estadísticos} para obtener distribuciones muestrales exactas o aproximadas.
 \end{enumerate}
-\subsubsection*{Teorema del Límete Central}
+\subsubsection{Teorema del Límite Central}
 El teorema del límite central dice que, bajo condiciones más bien generales, las sumas y medias de muestras aleatorias de mediciones tomadas de una población tienden a tener una distribución aproximadamente normal. El teorema es el siguiente:
 \begin{quote}
 	\textbf{Teorema:} Si muestras aleatorias de $n$ observaciones se sacan de una población no normal con media finita $\mu$ y desviación estándar $\sigma$, entonces, cuando $n$ es grande, la distribución de muestreo de la media muestral $\overline{x}$ está distribuida normalmente en forma aproximada, con media $\mu$ y desviación estándar
@@ -696,10 +696,10 @@ z = \frac{\text{Estimador} - \text{Media}}{\text{Desviación Estándar}}
 El teorema menciona que la aproximación es válida mientras el tamaño de la muestra n sea grande. Desafortunadamente el tamaño de la muestra no se puede determinar de manera tan sencilla, ya que va a depender de la forma de la población de la cual se realiza el muestreo, y de cómo se desee usar la aproximación. No obstante los siguientes puntos pueden ayudar a determinar el tamaño de la muestra en la mayoría de los casos
 \begin{itemize}
 	\item Si la población muestreada es normal, entonces la distribución muestral de $\overline{x}$ también será normal, sin importar cuál sea el tamaño de la muestra que se escoja. Este resultado se puede demostrar en forma teórica, pero no debe ser demasiado difícil aceptarla sin prueba.
-	\item Cuando la población muestreada es aproximadamente simétrica, la distribución muestral de $\overline{x}$ se hace también aproximadamente normal para valores relativamente pequeños de $n$. Como ejemplo tomemtos el lanzamiento de una dado valanceado, vease que la probabilidad de que salga una cara de entre las demás es simétrica, pero si tomamos multiples muestras de $n = 3$ veremos como esta distribución que parecía simétrica, toma forma de montículo o campana.
+	\item Cuando la población muestreada es aproximadamente simétrica, la distribución muestral de $\overline{x}$ se hace también aproximadamente normal para valores relativamente pequeños de $n$. Como ejemplo tomemos el lanzamiento de una dado balanceado, vease que la probabilidad de que salga una cara de entre las demás es simétrica, pero si tomamos multiples muestras de $n = 3$ veremos como esta distribución que parecía simétrica, toma forma de montículo o campana.
 	\item Cuando la población muestreada está sesgada, el tamaño muestral $n$ debe ser más grande, con $n$ al menos 30 antes que la distribución muestral de $\overline{x}$  se haga aproximadamente normal.
 \end{itemize}
-\subsubsection*{La Distribución Muestral de la Media Muestral}
+\subsubsection{La Distribución Muestral de la Media Muestral}
 Si la media poblacional $\mu$ es desconocida, se pueden seleccionar varias estadísticas como estimador; la media muestral $\overline{x}$ y la mediana muestral $m$ son dos que con facilidad llegan a nuestra mente. Pero ¿Cuál debe usarse?, Considere estos criterios al seleccionar el estimador para $\mu$, ¿Es fácil o difícil de calcular? ¿Produce estimaciones que sean demasiado altas o demasiado bajas de manera consistente? ¿Es más o menos variable que otros estimadores posibles?
 \\ En muchas situaciones, la media muestral x  tiene propiedades deseables como un estimador que no son compartidas por otros estimadores competidores; por tanto, se emplea en forma más general:
 \begin{itemize}
@@ -710,7 +710,7 @@ Si la media poblacional $\mu$ es desconocida, se pueden seleccionar varias estad
 \begin{quote}
 	\textbf{Definición:} La desviación estándar de una estadística empleada como estimador de un parámetro poblacional también se denomina \textbf{error estándar del estimador} (SE) porque se refiere a la precisión denominada. Por tanto, la desviación estándar de $\overline{x}$ , dada por $\sigma/\sqrt{n}$, se conoce como \textbf{error estándar de la media} abreviado como SE($\overline{x}$) o sólo SE.
 \end{quote}
-\subsubsection*{La Distribución Muestral de la Proporción Muestral}
+\subsubsection{La Distribución Muestral de la Proporción Muestral}
 Hay numerosos ejemplos prácticos de la variable aleatoria $x$ binomial. Una aplicación común se relaciona con la preferencia del consumidor o encuestas de opinión, donde usamos una muestra aleatoria de $n$ personas, para estimar la proporción $p$ de personas en la población que tienen una característica especificada. Si $x$ de las personas muestreadas tienen esta característica, entonces la proporción muestral
 \[
 \hat{p} = \frac{x}{n}
